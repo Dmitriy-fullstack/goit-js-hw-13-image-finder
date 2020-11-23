@@ -1,9 +1,3 @@
-
-
-// import { error } from '@pnotify/core';
-// import { from } from "core-js/fn/array";
-
-// import galleryTpl from './templates/gallery.hbs'
 export default class ApiService {
     constructor() {
         this.searchQuery = '',
@@ -40,27 +34,6 @@ export default class ApiService {
     }
 
 }
-//     
-//     return fetch(`https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${this.key}`)
-//     .then(response => response.json())
-//     .then(e => e.hits)
-//     .catch(console.log('idi v les, srabotal catch)')); 
-        
-// }
-//     get inputQuery() {
-//      return this.searchQuery; 
-//     }
-
-//     set inputQuery(newInputQuery) {
-//         this.searchQuery = newInputQuery;
-//     }
-
-//     incPage() {
-//     this.page += 1;
-// }
-//     resetPage() {
-//     this.page = 1;
-// }
 
 
 
