@@ -15,13 +15,13 @@ export default class ApiService {
     const key = '19196352-c8b59687c9ebaed16cee14214';
     const url = `https://pixabay.com/api/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${key}`;
 
-    fetch(url)
-        .then(resronce => resronce.json)
+    return fetch(url)
+        .then(resronce => resronce.json())
         .then(data => {
             console.log(data);
             this.increment();
-            
-        }).then(data => data.hits)
+            return data.hits;
+        })
         .catch (error => console.log('idi v les'))
     }
 
